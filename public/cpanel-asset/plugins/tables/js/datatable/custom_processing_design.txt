@@ -1,0 +1,22 @@
+.on( 'draw.dt', function () {
+        $('#horizontal-vertical').block({
+            message: '<div class="semibold"><span class="ft-refresh-cw icon-spin text-left"></span>&nbsp; Yüklənir ...</div>',
+            fadeIn: 1000,
+            fadeOut: 1000,
+            overlayCSS: {
+                backgroundColor: '#fff',
+                opacity: 0.8,
+                cursor: 'wait'
+            },
+            css: {
+                border: 0,
+                padding: '10px 15px',
+                color: '#fff',
+                width: 'auto',
+                backgroundColor: '#333'
+            }
+        });
+})
+.on( 'init.dt', function () {
+            $('#horizontal-vertical').unblock();
+        })
