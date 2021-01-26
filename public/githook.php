@@ -17,7 +17,7 @@ if (!isset($_GET['token']) || $_GET['token'] != 'f1909b9735bf5ccc50e0e5f3f59ea52
 /**
  * Pull
  */
-exec("cd /var/www/besres/data/www/larapcw.com/ && git pull origin master", $pull);
+exec("cd /var/www/larapcw/data/www/larapcw.com/ && git pull origin master", $pull);
 
 
 /**
